@@ -5,7 +5,7 @@ import './App.css';
 import logo from './images/c6bank.png';
 import menu from './images/menu_icon.png';
 import facebook from './images/facebook.png'
-import twitter from './images/twitter.jpg'
+import twitter from './images/twitter.png'
 import linkedin from './images/linkedin.png'
 import google from './images/google.png'
 import email from './images/email.png'
@@ -24,7 +24,10 @@ function App() {
 
       <div className="corpo">
         <div className='degrade'>
-          <img src={carbon}/>
+          {/* <img src={carbon}/> */}
+          <div className='forma'>
+
+          </div>
         </div>
         <span className="titulo">Por que C6 Bank?
           <br/>

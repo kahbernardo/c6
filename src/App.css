@@ -366,10 +366,11 @@ template {
   background: black;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  
 }
 .header img{
   height: 25px;
+   margin-left: 10px; 
   
 }
 .header button{
@@ -379,6 +380,7 @@ template {
   cursor: pointer;
   height: 10px;
   box-sizing: border-box;
+  margin:20px;
 
 }
 /* ================================== */
@@ -398,24 +400,52 @@ template {
 .corpo button{
   display:flex;
   border-radius: 6px;
-  height:10%;
+  height:30%;
   width:70%;
+  background: transparent;
+  border-color: white;
+  color: white;
 }
 .corpo .titulo{
   color:white;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   margin: 30px;
 
 }
 .corpo .subtitulo{
-  font-size: 10px;
+  font-size: 15px;
   font-weight: lighter;
 }
+.degrade {
+  width: 100%;
+  background: url('./images/textura.jpg');
+  background-size: cover;
+  height: 100%;
+}
+.forma{
+  height: 100%;
+  width: 100%;
+  background: -webkit-linear-gradient(1deg, rgb(0, 0, 0), rgb(61, 61, 61));
+  background: linear-gradient(1deg, rgb(0, 0, 0), rgb(61, 61, 61));
+  opacity: 95%;
+
+}
+
 /* ====================================== */
 .footer{
   display: flex;
-  height: 20%;
+  height: 30%;
   background: black;
   width: 100%;
+}
+.footer ul{
+  display: flex;
+  width: 100%;
+  list-style: none;
+  justify-content: baseline;
+}
+ul img{
+  height: 50px;
+  margin:5px;
 }
