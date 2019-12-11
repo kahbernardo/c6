@@ -15,25 +15,39 @@ function App() {
   return (
     
     <div className="container">
+      
       <div className="header">
-        <img src={logo}/>
-          <ul className='listamenu'>
+        <div className='partecima'>
+          <img src={logo}/>
+          <input classname='pesquisa'/>
+        </div>
+        <ul classname='listamenu'>
               <li>
-                <button>C6 Bank</button>
+                <a>
+                C6 Bank
+                </a>
               </li>
               <li>
-                <button>Transparência</button>
+                <a>
+                Transparência
+                </a>
               </li>
               <li>
-                <button>Assistência</button>
+                <a>
+                Assistência
+                </a>
               </li>
               <li>
-                <button>Personalização</button>
+                <a>
+                Personalização
+                </a>
               </li>
               <li>
-               <button>Facilidade</button>
-               </li>
-          </ul>
+                <a>
+                Facilidade
+                </a>
+              </li>
+            </ul>
           
           <button>
             <img classname='botao' src={menu}/>
@@ -43,13 +57,15 @@ function App() {
       <div className="corpo">
         <div className='degrade'>
           <div className='forma'>
-            <span className="titulo">Por que C6 Bank?<br /></span>
-            <span className="subtitulo">
-              O C é de carbono, elemento base da vida, e 6 é o número atômico desse elemento. Os átomos do carbono se unem de várias formas e são capazes de criar diferentes substâncias, desde o grafite, em uma combinação simples, até a mais rara, como o diamante. A habilidade do carbono de fazer conexões nos inspira.
-            </span>
-          <button>
-              Conheça nossos produtos
-          </button>
+            <div className='meio'>
+              <span className="titulo">Por que C6 Bank?<br /></span>
+              <span className="subtitulo">
+                O C é de carbono, elemento base da vida, e 6 é o número atômico desse elemento. Os átomos do carbono se unem de várias formas e são capazes de criar diferentes substâncias, desde o grafite, em uma combinação simples, até a mais rara, como o diamante. A habilidade do carbono de fazer conexões nos inspira.
+              </span>
+              <button>
+                Conheça nossos produtos
+              </button>
+            </div>
           </div>
         </div>
         {/* <span className="titulo">Por que C6 Bank?
@@ -64,16 +80,16 @@ function App() {
             <button><a><img src={facebook} /></a></button>
           </li>
           <li>
-            <a><img src={twitter} /></a>
+            <button><img src={twitter} /></button>
           </li>
           <li>
-            <a><img src={linkedin} /></a>
+            <button><img src={linkedin} /></button>
           </li>
           <li>
-            <a><img src={google} /></a>
+            <button><img src={google} /></button>
           </li>
           <li>
-            <a><img src={email} /></a>
+            <button><img src={email} /></button>
           </li>
         </ul>
       </div>
