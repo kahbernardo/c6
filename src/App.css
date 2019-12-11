@@ -581,10 +581,14 @@ template {
     border-radius: 6px;
     height:60px;
     width:70%;
+    text-align: center;
     background: transparent;
     border-color: white;
     color: white;
     margin-top:8%;
+    justify-content: center
+    
+    ;
   }
   .corpo .titulo{
     color:white;
