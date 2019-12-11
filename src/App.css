@@ -350,102 +350,235 @@ template {
 /* ==================================== */
 @import url('https://fonts.googleapis.com/css?family=Alatsi&display=swap');
 
-.container{
-  width:360px;
-  height: 760px;
-  display:flex;
-  flex-direction: column;
-  font-family: 'Alatsi', sans-serif;
-}
 
-/* ================================== */
-.header{
-  display:flex;
-  height: 10%;
-  width: 100%;
-  background: black;
-  justify-content: space-between;
-  align-items: center;
+@media screen and (min-width: 768px){
+
+  .container{
+    min-width:768px;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    font-family: 'Alatsi', sans-serif;
+    justify-content: space-between;
+    background: black;
+  }
+    /* ================================== */
+  .header{
+    display:flex;
+    height: 25%;
+    width: 100%;
+    background: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
   
-}
-.header img{
-  height: 25px;
-   margin-left: 10px; 
+  .listamenu{
+    color:white;
+    list-style: none;
+    height: 40%;
+    width: 100%;
+  }
+  .listamenu a{
+    color:white;
+  }
+  .header img{
+    min-height: 30px;
+    margin-left: 40px;
+    max-width: 300px; 
+    box-sizing: border-box;
+    
+  }
+  .header button{
+    background: transparent;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    height: 40%;
+    box-sizing: border-box;
+    
+    display: none;
+
+  }
+  .header button img{
+    max-width: 40px;
+  }
   
-}
-.header button{
-  background: transparent;
-  border:none;
-  outline: none;
-  cursor: pointer;
-  height: 10px;
-  box-sizing: border-box;
-  margin:20px;
+  /* ================================== */
+  .corpo{
+    display:flex;
+    background: black;
+    flex-direction: column;
+    width:100%;
+    height:70%;
+    justify-content: center;
+    align-items:center;
+  }
+  .corpo img{
+    width: 100%;
+    height: 40%;
+  }
+  .corpo button{
+    display:flex;
+    border-radius: 6px;
+    height:15%;
+    width:70%;
+    background: transparent;
+    border-color: white;
+    color: white;
+    margin:10%;
+  }
+  .corpo .titulo{
+    color:white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 10%;
 
-}
-/* ================================== */
-.corpo{
-  display:flex;
-  background: black;
-  flex-direction: column;
-  width:100%;
-  height:60%;
-  justify-content: center;
-  align-items:center;
-}
-.corpo img{
-  width: 100%;
-  height: 40%;
-}
-.corpo button{
-  display:flex;
-  border-radius: 6px;
-  height:30%;
-  width:70%;
-  background: transparent;
-  border-color: white;
-  color: white;
-}
-.corpo .titulo{
-  color:white;
-  font-size: 25px;
-  font-weight: bold;
-  margin: 30px;
+  }
+  .subtitulo{
+    font-size: 15px;
+    font-weight: lighter;
+    color:white;
+    width: 70%;
+    margin-left: 10%;
+  }
+  .degrade {
+    width: 100%;
+    background: url('./images/textura.jpg');
+    background-size: cover;
+    height: 100%;
+  }
+  .forma{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    background: -webkit-linear-gradient(1deg, rgb(0, 0, 0), rgb(61, 61, 61));
+    background: linear-gradient(1deg, rgb(0, 0, 0), rgb(61, 61, 61));
+    opacity: 95%;
 
-}
-.corpo .subtitulo{
-  font-size: 15px;
-  font-weight: lighter;
-}
-.degrade {
-  width: 100%;
-  background: url('./images/textura.jpg');
-  background-size: cover;
-  height: 100%;
-}
-.forma{
-  height: 100%;
-  width: 100%;
-  background: -webkit-linear-gradient(1deg, rgb(0, 0, 0), rgb(61, 61, 61));
-  background: linear-gradient(1deg, rgb(0, 0, 0), rgb(61, 61, 61));
-  opacity: 95%;
+  }
 
+  /* ====================================== */
+  .footer{
+    display: none;
+  }  
 }
+ @media screen and (min-width: 360px){
 
-/* ====================================== */
-.footer{
-  display: flex;
-  height: 30%;
-  background: black;
-  width: 100%;
-}
-.footer ul{
-  display: flex;
-  width: 100%;
-  list-style: none;
-  justify-content: baseline;
-}
-ul img{
-  height: 50px;
-  margin:5px;
-}
+  .container{
+    width:360px;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    font-family: 'Alatsi', sans-serif;
+    justify-content: space-between;
+    background: black;
+  }
+
+  /* ================================== */
+  .header{
+    display:flex;
+    height: 15%;
+    width: 100%;
+    background: black;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .header img{
+    height: 25px;
+    margin-left: 10px; 
+    
+  }
+  .header button{
+    background: transparent;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    height: 10px;
+    box-sizing: border-box;
+    margin:30px;
+
+  }
+  /* ================================== */
+  .corpo{
+    display:flex;
+    background: black;
+    flex-direction: column;
+    width:100%;
+    height:70%;
+    justify-content: center;
+    align-items:center;
+  }
+  .corpo img{
+    width: 100%;
+    height: 40%;
+  }
+  .corpo button{
+    display:flex;
+    border-radius: 6px;
+    height:15%;
+    width:70%;
+    background: transparent;
+    border-color: white;
+    color: white;
+    margin:10%;
+  }
+  .corpo .titulo{
+    color:white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 10%;
+
+  }
+  .subtitulo{
+    font-size: 15px;
+    font-weight: lighter;
+    color:white;
+    width: 70%;
+    margin-left: 10%;
+  }
+  .degrade {
+    width: 100%;
+    background: url('./images/textura.jpg');
+    background-size: cover;
+    height: 100%;
+  }
+  .forma{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    background: -webkit-linear-gradient(1deg, rgb(0, 0, 0), rgb(61, 61, 61));
+    background: linear-gradient(1deg, rgb(0, 0, 0), rgb(61, 61, 61));
+    opacity: 95%;
+
+  }
+
+  /* ====================================== */
+  .footer{
+    display: flex;
+    height: 15%;
+    background: black;
+    width: 100%;
+  }
+  .footer ul{
+    display: flex;
+    width: 100%;
+    list-style: none;
+    justify-content: baseline;  
+    /* margin-top:130px; */
+    height: 20%
+  }
+  ul img{
+    /* min-height: 40px; */
+    height: 40px;
+    margin:7px;
+  }
+} 

@@ -17,33 +17,51 @@ function App() {
     <div className="container">
       <div className="header">
         <img src={logo}/>
+          <ul className='listamenu'>
+              <li>
+                <button>C6 Bank</button>
+              </li>
+              <li>
+                <button>Transparência</button>
+              </li>
+              <li>
+                <button>Assistência</button>
+              </li>
+              <li>
+                <button>Personalização</button>
+              </li>
+              <li>
+               <button>Facilidade</button>
+               </li>
+          </ul>
+          
           <button>
-            <img src={menu}/>
+            <img classname='botao' src={menu}/>
           </button>
       </div>
 
       <div className="corpo">
         <div className='degrade'>
-          {/* <img src={carbon}/> */}
           <div className='forma'>
-
-          </div>
-        </div>
-        <span className="titulo">Por que C6 Bank?
-          <br/>
+            <span className="titulo">Por que C6 Bank?<br /></span>
             <span className="subtitulo">
               O C é de carbono, elemento base da vida, e 6 é o número atômico desse elemento. Os átomos do carbono se unem de várias formas e são capazes de criar diferentes substâncias, desde o grafite, em uma combinação simples, até a mais rara, como o diamante. A habilidade do carbono de fazer conexões nos inspira.
             </span>
-          </span>
-        <button>
-          Conheça nossos produtos
-        </button>
+          <button>
+              Conheça nossos produtos
+          </button>
+          </div>
+        </div>
+        {/* <span className="titulo">Por que C6 Bank?
+          <br/> */}
+            
+        
       </div>
 
       <div className="footer">
         <ul>
           <li>
-            <a><img src={facebook}/></a>
+            <button><a><img src={facebook} /></a></button>
           </li>
           <li>
             <a><img src={twitter} /></a>
