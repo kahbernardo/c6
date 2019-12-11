@@ -351,15 +351,16 @@ template {
 @import url('https://fonts.googleapis.com/css?family=Alatsi&display=swap');
 
 
-@media screen and (min-width: 768px){
+@media (min-width: 769px) and (orientation: landscape){
 
-  .container{
-    min-width:768px;
+  .container{ 
     height: 100vh;
+    width:100%;
     display:flex;
     flex-direction: column;
     font-family: 'Alatsi', sans-serif;
     justify-content: space-between;
+    align-items: center;
     background: black;
   }
     /* ================================== */
@@ -369,37 +370,67 @@ template {
     width: 100%;
     background: black;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    
-  }
-  
-  .listamenu{
-    color:white;
-    list-style: none;
-    height: 40%;
-    width: 100%;
-  }
-  .listamenu a{
-    color:white;
-  }
-  .header img{
-    min-height: 30px;
-    margin-left: 40px;
-    max-width: 300px; 
+    justify-content: center;
+    margin-left: 10%; 
+    margin-right: 10%; 
     box-sizing: border-box;
     
+    
   }
-  .header button{
+  .partecima{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-top: 20px;
+  }
+  .header img{
+    min-height: 35px;
+    max-width: 250px; 
+    box-sizing: border-box;
+    margin: 10px;
+  }
+  .header input{
+    height: 40%;
+    border-radius:6px;
+    margin:1%;
+  }
+  
+  .header >ul{
+    list-style: none;
+    height: 20%;
+    width: 100%; 
+    
+    
+    
+  }
+  .header >ul>li{
+    display: inline-block;
+    list-style: none;
+    justify-content: space-between;
+    width: 20%;
+    
+  }
+  .header ul li a{
+    color:white;
+    background: transparent;
+    outline:none;
+    border:none;
+    cursor:pointer;
+    font-size: 22px;
+    padding: 10%;
+    
+    
+
+  }
+  .header>button{
     background: transparent;
     border:none;
     outline: none;
     cursor: pointer;
     height: 40%;
     box-sizing: border-box;
-    
     display: none;
-
   }
   .header button img{
     max-width: 40px;
@@ -411,7 +442,7 @@ template {
     background: black;
     flex-direction: column;
     width:100%;
-    height:70%;
+    height:75%;
     justify-content: center;
     align-items:center;
   }
@@ -419,30 +450,40 @@ template {
     width: 100%;
     height: 40%;
   }
-  .corpo button{
+  .meio{
     display:flex;
+    flex-direction: column;
+    margin-left: 10%;
+    height: 100%;
+  }
+  .corpo button{
     border-radius: 6px;
-    height:15%;
-    width:70%;
+    height:70px;
+    width:20%;
     background: transparent;
     border-color: white;
     color: white;
-    margin:10%;
+    text-align: center;
+    margin-top: 8%;
+    
+    
   }
   .corpo .titulo{
     color:white;
-    font-size: 25px;
+    font-size: 40px;
     font-weight: bold;
-    margin-top: 20px;
-    margin-left: 10%;
+    margin-top:30px;
+    margin-bottom:20px;
+    
+   
 
   }
   .subtitulo{
-    font-size: 15px;
+    font-size: 20px;
     font-weight: lighter;
     color:white;
-    width: 70%;
-    margin-left: 10%;
+    width: 40%;
+    
   }
   .degrade {
     width: 100%;
@@ -453,13 +494,13 @@ template {
   .forma{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    align-items: baseline;
     height: 100%;
     width: 100%;
     background: -webkit-linear-gradient(1deg, rgb(0, 0, 0), rgb(61, 61, 61));
     background: linear-gradient(1deg, rgb(0, 0, 0), rgb(61, 61, 61));
     opacity: 95%;
-
   }
 
   /* ====================================== */
@@ -467,42 +508,48 @@ template {
     display: none;
   }  
 }
- @media screen and (min-width: 360px){
+@media screen and (min-width: 368px) and (max-width: 768px){
 
   .container{
-    width:360px;
+    width:100%;
     height: 100vh;
     display:flex;
     flex-direction: column;
     font-family: 'Alatsi', sans-serif;
     justify-content: space-between;
     background: black;
+    align-items: center;
   }
 
   /* ================================== */
   .header{
     display:flex;
     height: 15%;
-    width: 100%;
+    width: 90%;
     background: black;
     justify-content: space-between;
     align-items: center;
     
   }
   .header img{
-    height: 25px;
-    margin-left: 10px; 
+    height: 34px;
+    margin-left: 10%; 
     
+  }
+  .header input{
+    display: none;
   }
   .header button{
     background: transparent;
     border:none;
     outline: none;
     cursor: pointer;
-    height: 10px;
+    height: 40px;
     box-sizing: border-box;
     margin:30px;
-
+  }
+  header ul{
+    display: none;
   }
   /* ================================== */
   .corpo{
@@ -514,6 +561,13 @@ template {
     justify-content: center;
     align-items:center;
   }
+  .meio{
+    display:flex;
+    flex-direction: column;
+    margin-left: 10%;
+    height: 100%;
+    margin-top: 10%;
+  }
   .corpo img{
     width: 100%;
     height: 40%;
@@ -521,27 +575,27 @@ template {
   .corpo button{
     display:flex;
     border-radius: 6px;
-    height:15%;
+    height:60px;
     width:70%;
     background: transparent;
     border-color: white;
     color: white;
-    margin:10%;
+    margin-top:8%;
   }
   .corpo .titulo{
     color:white;
     font-size: 25px;
     font-weight: bold;
-    margin-top: 20px;
-    margin-left: 10%;
+    
 
   }
   .subtitulo{
-    font-size: 15px;
+    font-size: 18px;
     font-weight: lighter;
     color:white;
     width: 70%;
-    margin-left: 10%;
+    margin-top: 6%;
+    
   }
   .degrade {
     width: 100%;
@@ -564,21 +618,29 @@ template {
   /* ====================================== */
   .footer{
     display: flex;
-    height: 15%;
+    height: 20%;
     background: black;
-    width: 100%;
+    width: 90%;
+    
+
   }
-  .footer ul{
-    display: flex;
-    width: 100%;
+  .footer ul li{
+    display: inline-block;
     list-style: none;
-    justify-content: baseline;  
-    /* margin-top:130px; */
-    height: 20%
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer button{
+    background: transparent;
+    border:none;
+    padding: 22%;
+    outline: none;
+    cursor: pointer;
+
   }
   ul img{
     /* min-height: 40px; */
     height: 40px;
-    margin:7px;
+    
   }
 } 
