@@ -10,6 +10,8 @@ import linkedin from './images/linkedin.png'
 import google from './images/google.png'
 import email from './images/email.png'
 import carbon from './images/textura.jpg'
+import { Link } from './styles'
+import { LinkInferior } from './styles'
 
 function App() {
   return (
