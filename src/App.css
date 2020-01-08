@@ -387,7 +387,7 @@ template {
   }
   .header img{
     height: 50px;
-    width: 220px; 
+    /* width: 220px;  */
     box-sizing: border-box;
     margin: 30px;
   }
